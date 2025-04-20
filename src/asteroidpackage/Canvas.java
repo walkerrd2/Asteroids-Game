@@ -1,5 +1,7 @@
 package asteroidpackage;
 
-public class Canvas {
+import javax.swing.JPanel;
+
+public class Canvas extends JPanel {
 
 }

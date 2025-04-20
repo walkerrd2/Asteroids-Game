@@ -1,5 +1,7 @@
 package asteroidpackage;
 
-public class DashPanel {
+import javax.swing.JPanel;
+
+public class DashPanel extends JPanel {
 
 }

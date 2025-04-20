@@ -1,5 +1,5 @@
 package asteroidpackage;
 
-public class Asteroid {
+public class Asteroid extends PolygonSprite {
 
 }

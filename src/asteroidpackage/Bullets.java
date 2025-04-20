@@ -1,5 +1,5 @@
 package asteroidpackage;
 
-public class Bullets {
+public class Bullets extends Sprite {
 
 }

@@ -1,5 +1,5 @@
 package asteroidpackage;
 
-public class Sprite {
+public abstract class Sprite {
 
 }
