@@ -33,12 +33,13 @@ public class Asteroid extends PolygonSprite {
 		
 		// this will generate points around a circle randomly
 		for(int i = 0; i < sides; i++) {
-			double angle = 2 * Math.PI * (i/sides);
-			double radius = size * (0.8 + 0.4 * random.nextDouble()); // random radius
+			double angle = 2 * Math.PI * i/sides;
+			double radius = size * (0.9 + 0.2 * random.nextDouble()); // random radius
 			int px = (int) Math.round(radius * Math.cos(angle));
 			int py = (int) Math.round(radius * Math.sin(angle));
 			myPoly.addPoint(px, py);
 		}
+		myColor = Color.WHITE;
 	}
 	
 	/*
