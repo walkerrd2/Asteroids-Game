@@ -24,7 +24,7 @@ public class MainFrame extends JFrame {
 		setLayout(new BorderLayout());
 		
 		// Game instances
-		game = new Game(0, Canvas.WIDTH, 0, Canvas.HEIGHT);
+		game = new GamePanel(0, Canvas.WIDTH, 0, Canvas.HEIGHT);
 		canvas = new Canvas(game);
 		dp = new DashPanel(game);
 		
