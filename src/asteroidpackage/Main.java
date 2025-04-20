@@ -3,8 +3,9 @@ package asteroidpackage;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World");
-
+		// Calling the mainframe to run the game
+		MainFrame mf = new MainFrame();
+		mf.setVisible(true);
 	}
 
 }
