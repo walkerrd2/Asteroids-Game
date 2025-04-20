@@ -35,6 +35,9 @@ public class MainFrame extends JFrame {
 		// Will be the controller and connect everything
 		gc = new GameController(game, canvas, dp);
 		
+		canvas.requestFocus();
+		canvas.setController(gc); 
+		
 		// Set up the frame window
 		pack();
 		setLocationRelativeTo(null);

@@ -37,7 +37,14 @@ public class GamePanel {
         
         random = new Random();
         
-        // Initialize game state
+        initializeGame();
+    }
+    
+    /*
+     * Initialize or resets the game
+     */
+    private void initializeGame() {
+        // Reset game state
         shipCounter = INITIAL_SHIPS;
         points = 0;
         
@@ -50,6 +57,13 @@ public class GamePanel {
         
         // Create initial asteroids
         createAsteroids();
+    }
+    
+    /*
+     * restarts the game
+     */
+    public void restart() {
+        initializeGame();
     }
     
     /*
@@ -226,7 +240,7 @@ public class GamePanel {
      */
     public void turnCW() {
         if (ship != null) {
-            ship.rotate(5);  // 5 degrees clockwise
+            ship.rotate(10);  // 5 degrees clockwise
         }
     }
     
@@ -235,7 +249,7 @@ public class GamePanel {
      */
     public void turnCCW() {
         if (ship != null) {
-            ship.rotate(-5);  // 5 degrees counter-clockwise
+            ship.rotate(-10);  // 5 degrees counter-clockwise
         }
     }
     

@@ -31,6 +31,7 @@ private static final int TIMER_DELAY = 50;  // ~20 frames per second
         // Add this controller as key listener to the canvas
         theCanvas.addKeyListener(this);
         theCanvas.setFocusable(true);
+        theCanvas.requestFocus();
         
         // Start the game timer
         time.start();
@@ -59,7 +60,7 @@ private static final int TIMER_DELAY = 50;  // ~20 frames per second
                 gp.shoot();
                 break;
             case KeyEvent.VK_DOWN:
-                gp.brake();  // Optional: brake when down arrow is pressed
+                gp.brake();  //brake when down arrow is pressed
                 break;
         }
     }
@@ -81,6 +82,17 @@ private static final int TIMER_DELAY = 50;  // ~20 frames per second
         // Repaint the views
         theCanvas.repaint();
         theDash.repaint();
+    }
+	
+	/*
+	 * This restarts the game timer
+	 */
+	public void restartGame() {
+        // Make sure timer is stopped
+        time.stop();
+        
+        // Start timer again
+        time.start(); 
     }
 
 }
