@@ -64,5 +64,4 @@ public class Canvas extends JPanel {
         // Draw the offscreen buffer to the screen
         g.drawImage(offscreenBuffer, 0, 0, this);
     } 
-   
 }
