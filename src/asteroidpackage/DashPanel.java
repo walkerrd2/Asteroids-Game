@@ -13,7 +13,7 @@ public class DashPanel extends JPanel {
 	
 	private GamePanel gp;
 	
-	public DashPanel(Game game) {
+	public DashPanel(GamePanel game) {
         this.gp = game;
         setBackground(Color.BLACK);
         setPreferredSize(new Dimension(800, 50));
